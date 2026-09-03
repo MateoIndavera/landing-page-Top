@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   margin: 0;
-  font-family: Helvetica
+  font-family: Helvetica, sans-serif
 }
 
 header {
@@ -10,26 +10,31 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
 nav {
+  box-sizing: border-box;
+  height: 50px;
   width: 70vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  font-size: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
 ul {
+  color: #9ea2a7;
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -38,20 +43,11 @@ ul {
 }
 
 .contHeader {
+  margin: 50px 0;
   width: 70vw;
   display: flex;
   justify-content: space-between;
   gap: 30px;
-}
-
-.headText {
-  font-size: 48px;
-  font-weight: 900;
-  margin: 0;
-}
-
-.contHeader button {
-  width: 100px;
 }
 
 .contHeader div {
@@ -60,11 +56,36 @@ ul {
   flex: 1
 }
 
+.headText {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  flex: 0;
+}
+
+.contHeader p {
+  font-size: 16px;
+  font-weight: 0;
+  margin: 0;
+  flex: 3;
+}
+
+.contHeader button {
+  background-color: rgb(20, 118, 211);
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  outline: none;
+  border: none;
+  flex: 1 0 0;
+  width: 120px;
+  border-radius: 10px;
+  padding: 3px 16px;
+}
 
 .imgHeader {
   box-sizing: content-box;
-  width: 400px;
   height: 250px;
   margin: auto;
-  flex: 1;
+  flex: 1 0 50px;
 }
